@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactez-nous</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .header h1 {
+            font-size: 24px;
+        }
+        .contact-info {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+        }
+        .contact-item {
+            flex: 1 1 calc(25% - 20px);
+            margin: 10px;
+            text-align: center;
+        }
+        .contact-item h3 {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        .form-section {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .form-container {
+            flex: 1 1 45%;
+            margin: 10px;
+        }
+        .form-container h2 {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        form button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        form button:hover {
+            background-color: #0056b3;
+        }
+        .map-container {
+            flex: 1 1 45%;
+            margin: 10px;
+        }
+        iframe {
+            width: 100%;
+            height: 300px;
+            border: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>CONNECTONS-NOUS</h1>
+        </div>
+
+        <div class="contact-info">
+            <div class="contact-item">
+                <h3>NOTRE BUREAU PRINCIPAL</h3>
+                <p>SoHo 94 Broadway St New York, NY 1001</p>
+            </div>
+            <div class="contact-item">
+                <h3>NUMÉRO DE TÉLÉPHONE</h3>
+                <p>234-9876-5400<br>888-0123-4567 (sans frais)</p>
+            </div>
+            <div class="contact-item">
+                <h3>FAX</h3>
+                <p>1-234-567-8900</p>
+            </div>
+            <div class="contact-item">
+                <h3>COURRIER</h3>
+                <p>bonjour@theme.com</p>
+            </div>
+        </div>
+
+        <div class="form-section">
+            <div class="form-container">
+                <h2>OBTENEZ UNE ÉVALUATION DE CAS GRATUITE DÈS AUJOURD'HUI !</h2>
+                <p>DISPONIBLE 24 HEURES SUR 24 !</p>
+                <form>
+                    <input type="text" placeholder="Enter your Name" required>
+                    <input type="email" placeholder="Enter a valid email address" required>
+                    <textarea placeholder="Enter your message" rows="5" required></textarea>
+                    <button type="submit">Soumettre</button>
+                </form>
+            </div>
+
+            <div class="map-container">
+                <h2>NOUS SOMMES ICI</h2>
+                <p>LUN-VEN 8H30-17H00 / LES TÉLÉPHONES SONT OUVERTS 24H / 24 ET 7J / 7</p>
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.9034680734453!2d-74.00722848459526!3d40.72177417932967!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259af18f5eec3%3A0x7467a92ab8a6c7f5!2sSoHo%2C%20New%20York%2C%20NY!5e0!3m2!1sen!2sus!4v1615633031617!5m2!1sen!2sus" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
