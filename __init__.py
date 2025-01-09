@@ -39,7 +39,7 @@ from datetime import datetime
 app = Flask(__name__)
 
 # Route pour extraire les commits d'un repository via l'API GitHub
-@app.route('/commits', methods=['GET'])
+@app.route('/commits/', methods=['GET'])
 def get_commits():
     # URL de l'API GitHub pour les commits
     repo_url = "https://api.github.com/repos/OpenRSI/5MCSI_Metriques/commits"
@@ -64,7 +64,7 @@ def get_commits():
         return jsonify({"error": str(e)}), 500
 
 # Route pour extraire les minutes d'une chaîne de date donnée
-@app.route('/extract-minutes/<date_string>', methods=['GET'])
+@app.route('/extract-minutes/<date_string>/', methods=['GET'])
 def extract_minutes(date_string):
     try:
         # Conversion de la chaîne de date en objet datetime
